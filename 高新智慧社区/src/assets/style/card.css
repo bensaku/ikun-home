@@ -1,0 +1,237 @@
+.card {
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 840px;
+  height: 170px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
+
+.problem-card {
+  margin: 0 auto;
+
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 840px;
+  height: 200px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
+
+.house-card {
+  margin-left: 120px;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 580px;
+  height: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.355);
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.card-left,
+.card-right {
+  flex: 1;
+}
+
+
+
+.card-title {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #70B603;
+}
+
+.card-title2 {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #0000ff;
+}
+
+.card-title3 {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #E87D00;
+}
+
+.card-title4 {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #A30014;
+}
+
+.card-icon {
+  margin-left: 8px;
+  width: 35px;
+  height: 35px;
+}
+
+.card-data p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-input {
+  width: calc(50% - 8px);
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 20px;
+}
+
+.card-input1 {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #70B603;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.card-input2 {
+  width: calc(50% - 8px);
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: 270px;
+  height: 50px;
+  resize: none;
+}
+
+.card-input3 {
+  width: calc(50% - 8px);
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: 270px;
+  height: 70px;
+  resize: none;
+}
+
+.card-input4 {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #E87D00;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.card_faqi_house {
+  margin-left: 120px;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 500px;
+  height: 120px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.355);
+  margin-top: 50px;
+}
+
+.card_faqi {
+  margin:0 auto;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 540px;
+  height: 120px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.355);
+  margin-top: 50px;
+}
+
+
+.card_faqi .card-right {
+  margin-right: -30%;
+}
+
+.card-data_faqi {
+  margin-top: 20px;
+
+}
+
+.card-button {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20%;
+  border: none;
+}
+
+.card-button:hover {
+  background-color: #70B603;
+}
+
+.card-button-image {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+}
+
+.spacer {
+  width: 30px;
+  /* 设置间隔宽度，根据需要进行调整 */
+  height: 15px;
+}
+
+/*8888888888888888*/
+
+.card-btnimg {
+  flex: 0.2;
+}
+
+.card-bensaku-button {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-radius: 20%;
+  border: none;
+}
+
+.card-bensaku-button:hover {
+  background-color: #70B603;
+}
