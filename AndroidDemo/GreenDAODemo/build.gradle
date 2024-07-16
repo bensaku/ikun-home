@@ -1,0 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral() // 添加需要的仓库
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.1' // 添加 GreenDAO 插件依赖
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+}
