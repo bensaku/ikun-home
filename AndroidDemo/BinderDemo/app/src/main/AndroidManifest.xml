@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BinderDemo"
         tools:targetApi="31">
+        <service android:name=".MyService" android:process=":remote"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
