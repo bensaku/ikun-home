@@ -19,6 +19,27 @@ public class MainActivity extends AppCompatActivity {
 
     private IBinder mBinder;
 
+    private IReporter mReporterAidl;
+
+    private class AidlConnection implements ServiceConnection {
+
+        @Override
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+            mReporterAidl = IReporter.Stub.asInterface(iBinder);
+            try {
+                int hello = mReporterAidl.report("hello", 1);
+                Log.d("MainActivity", "hello: " + hello);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName componentName) {
+
+        }
+    }
+
     private class BindConnection implements ServiceConnection {
 
         @Override
@@ -64,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, MyService.class);
         bindService(intent, new BindConnection(), BIND_AUTO_CREATE);
+
+        Intent intent2 = new Intent(this, AidlService.class);
+        bindService(intent2, new AidlConnection(), BIND_AUTO_CREATE);
 
 
     }
