@@ -1,0 +1,50 @@
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+ActivityCompat.requestPermissions(
+                this,
+                new String[]{Manifest.permission.CALL_PHONE, Manifest.permission.READ_CONTACTS},
+                1001);
+
+ContentResolver contentResolver = getContentResolver();
+        String[] projections = new String[] {
+                ContactsContract.Contacts._ID,
+                ContactsContract.Contacts.DISPLAY_NAME};
+        Cursor cursor = contentResolver.query(
+                ContactsContract.Contacts.CONTENT_URI,
+                projections,
+                null,
+                null,
+                null
+                );
+        System.out.println("zxl--->cursor--->"+cursor);
+        if (cursor != null) {
+            int count = cursor.getCount();
+            System.out.println("zxl--->count--->"+count);
+            while (cursor.moveToNext()) {
+                String id = cursor.getString(cursor.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
+                String name = cursor.getString(cursor.getColumnIndexOrThrow(ContactsContract.Contacts.DISPLAY_NAME));
+                System.out.println("zxl--->id--->" + id);
+                System.out.println("zxl--->name--->" + name);
+
+                ContentResolver phoneNumberResolver = getContentResolver();
+                Cursor phoneNumberCursor = phoneNumberResolver.query(
+                        ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                        null,
+                        ContactsContract.Contacts._ID + " = ?",
+                        new String[]{
+                                id
+                        },
+                        null
+                );
+                if (phoneNumberCursor != null) {
+                    if (phoneNumberCursor.getCount() > 0) {
+                        while (phoneNumberCursor.moveToNext()) {
+                            String number = phoneNumberCursor.getString(phoneNumberCursor.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER));
+                            System.out.println("zxl--->number--->" + number);
+                        }
+                    }
+                    phoneNumberCursor.close();
+                }
+            }
+            cursor.close();
+        }

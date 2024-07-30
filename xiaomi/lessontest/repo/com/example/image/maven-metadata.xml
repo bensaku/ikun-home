@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.example</groupId>
+  <artifactId>image</artifactId>
+  <versioning>
+    <latest>1.00</latest>
+    <release>1.00</release>
+    <versions>
+      <version>1.00</version>
+    </versions>
+    <lastUpdated>20240530060819</lastUpdated>
+  </versioning>
+</metadata>

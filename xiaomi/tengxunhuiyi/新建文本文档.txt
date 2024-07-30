@@ -1,0 +1,10 @@
+<uses-permission android:name="android.permission.CALL_PHONE"/>
+
+ActivityCompat.requestPermissions(
+                        Lesson2Activity_1.this,
+                        new String[]{Manifest.permission.CALL_PHONE, Manifest.permission.READ_CONTACTS},
+                        1001);
+                intent = new Intent();
+                intent.setAction(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:"+135));
+                startActivity(intent);
