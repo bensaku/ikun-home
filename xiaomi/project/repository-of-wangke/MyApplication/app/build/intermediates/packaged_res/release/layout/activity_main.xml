@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_goto_handler"
+        style="@style/BensakuTextViewStyle"
+        android:text="前往handler页" />
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_goto_0603"
+        style="@style/BensakuTextViewStyle"
+        android:text="前往06/03作业" />
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_goto_leak"
+        style="@style/BensakuTextViewStyle"
+        android:text="前往leak页面" />
+
+    <!--    <com.example.myapplication.CustomTextView-->
+    <!--        android:id="@+id/work0602_goto_search"-->
+    <!--        android:text="前往搜索页面"-->
+    <!--        style="@style/BensakuTextViewStyle"/>-->
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "id": 110,
+    "gameName": "去吧方块",
+    "packageName": "com.qbfk.kyy",
+    "appId": "2882303761518139860",
+    "icon": "https://file.static.xiaomi.net/download/AppStore/0a92cf4ee5f064d180fd057824658120494cd0d4a",
+    "introduction": "采用传统下楼梯的玩法，主人公变成简约的小方块，可爱Q弹，切换的每一张背景都很唯美，你能下到多少层呢？",
+    "brief": "小方块下楼梯，超经典超好玩",
+    "versionName": "1.0.1",
+    "apkUrl": "https://file.static.xiaomi.net/download/http://t5.market.mi-img.com/download/Mina/0ed8c56f87e4af12f9388355016ca83cdb143473a",
+    "tags": "休闲,卡通",
+    "score": 3.9,
+    "playNumFormat": "13.4w",
+    "createTime": "2019-08-28 19:39:54"
+  }
+}

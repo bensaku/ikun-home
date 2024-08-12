@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_gray">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/background_radius_white">
+        <ImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/empty_avatar" />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先登录"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/fenCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击头像去登录"
+            android:textSize="12sp"
+            android:alpha="0.6"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="登录后查看"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

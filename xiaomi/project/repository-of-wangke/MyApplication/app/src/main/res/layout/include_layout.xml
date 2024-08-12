@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/demo_icon1"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:src="@drawable/icon1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toTopOf="@+id/demo_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <EditText
+        android:id="@+id/demo_edit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="请输入手机号"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/demo_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/demo_icon1"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/demo_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        app:layout_constraintBottom_toTopOf="@+id/demo_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/demo_edit"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/demo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码登录"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintTop_toBottomOf="@+id/demo_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

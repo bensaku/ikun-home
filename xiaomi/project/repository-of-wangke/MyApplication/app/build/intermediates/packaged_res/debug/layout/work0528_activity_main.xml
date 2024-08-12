@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <Button
+                android:id="@+id/work0528_add_item"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:text="添加列表项"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/work0528_remove_item"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:text="移除列表项"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/work0528_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入添加/删除的位置"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/work0528_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

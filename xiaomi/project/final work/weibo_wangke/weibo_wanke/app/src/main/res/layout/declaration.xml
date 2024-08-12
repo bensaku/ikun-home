@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_declaration_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/up_half"
+        android:gravity="center"
+        android:text="@string/声明与条款"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_declaration"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/middle_white"
+        android:gravity="center"
+        android:text="@string/隐私条款"
+        android:textSize="12sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_disagree"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/middle_white_selector"
+        android:gravity="center"
+        android:text="@string/不同意"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/down_half_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/同意并使用"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

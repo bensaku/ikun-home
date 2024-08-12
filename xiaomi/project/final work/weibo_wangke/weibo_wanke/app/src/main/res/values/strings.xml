@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">weibo_wangke</string>
+    <string name="隐私条款">欢迎使用 iH微博 ，我们将严格遵守相关法律和隐私政策保护您的个人隐私，请您阅读并同意《用户协议》与《隐私政策》</string>
+    <string name="声明与条款">声明与条款</string>
+    <string name="发你想说">发你想说</string>
+    <string name="logoTitle">iH微博</string>
+    <string name="不同意">不同意</string>
+    <string name="同意并使用">同意并使用</string>
+    <string name="请输入手机号">请输入手机号</string>
+    <string name="请输入验证码">请输入验证码</string>
+    <string name="立即登录">立即登录</string>
+    <string name="获取验证码">获取验证码</string>
+</resources>

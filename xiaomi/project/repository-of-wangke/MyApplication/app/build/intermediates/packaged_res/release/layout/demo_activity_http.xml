@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_tv_okhttp_sync"
+        style="@style/BensakuTextViewStyle"
+        android:text="同步请求" />
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_tv_okhttp_async"
+        style="@style/BensakuTextViewStyle"
+        android:text="异步请求" />
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_tv_okhttp_async_post"
+        style="@style/BensakuTextViewStyle"
+        android:text="异步post请求" />
+
+    <com.example.myapplication.CustomTextView
+        android:id="@+id/demo_retrofit_get"
+        style="@style/BensakuTextViewStyle"
+        android:text="rerere" />
+
+    <TextView
+        android:id="@+id/demo_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

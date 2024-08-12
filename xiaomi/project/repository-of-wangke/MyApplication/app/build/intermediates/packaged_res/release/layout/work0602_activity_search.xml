@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/work0602_et_search"
+            android:hint="请输入搜索内容"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:id="@+id/work0602_tv_search"
+            android:text="确认"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/work0603_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/work0602_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

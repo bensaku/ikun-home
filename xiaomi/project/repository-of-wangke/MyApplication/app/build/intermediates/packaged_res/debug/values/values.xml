@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_options">
+        <item>简体中文</item>
+        <item>繁体中文</item>
+        <item>English</item>
+        <item>日本語</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="coral">#FFFF7F50</color>
+    <color name="cyan">#FF00BCD4</color>
+    <color name="dark_blue">#FF1976D2</color>
+    <color name="dark_coral">#FFCD5C5C</color>
+    <color name="dark_cyan">#FF0097A7</color>
+    <color name="dark_gray">#FF505050</color>
+    <color name="dark_green">#FF388E3C</color>
+    <color name="dark_ochre">#B5651D</color>
+    <color name="dark_pink">#FFD81B60</color>
+    <color name="dark_salmon">#FFE9967A</color>
+    <color name="dark_sky_blue">#FF1E90FF</color>
+    <color name="dark_yellow">#FFFBC02D</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="gray">#FF808080</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="light_blue">#FFADD8E6</color>
+    <color name="light_coral">#FFF08080</color>
+    <color name="light_cyan">#FFE0FFFF</color>
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="light_green">#FF90EE90</color>
+    <color name="light_pink">#FFFFB6C1</color>
+    <color name="light_salmon">#FFFFA07A</color>
+    <color name="light_sky_blue">#FF87CEFA</color>
+    <color name="light_yellow">#FFFFFFE0</color>
+    <color name="ochre_yellow">#CC7722</color>
+    <color name="pink">#FFE91E63</color>
+    <color name="salmon">#FFFA8072</color>
+    <color name="sienna">#A0522D</color>
+    <color name="sky_blue">#FF00BFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFEB3B</color>
+    <string name="app_name">My Application</string>
+    <string name="select_language_prompt">选择语言</string>
+    <string name="title_activity_handler">HandlerActivity</string>
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="BensakuTextViewStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+    <declare-styleable name="CustomFlowView">
+        <attr format="dimension" name="horizontalSpace"/>
+        <attr format="dimension" name="verticalSpace"/>
+    </declare-styleable>
+</resources>
