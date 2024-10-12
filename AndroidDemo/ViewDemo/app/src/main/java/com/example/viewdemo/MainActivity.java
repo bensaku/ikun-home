@@ -1,5 +1,7 @@
 package com.example.viewdemo;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        CustomView view = findViewById(R.id.move);
+        view.smoothScrollTo(-200,0);
+    }
+
+    private void initAnimation(){
+        ObjectAnimator mObjectAnimator = ObjectAnimator.ofFloat(findViewById(R.id.move),"translationX",0,200);
+
+        AnimatorSet animatorSet =new AnimatorSet();
+        animatorSet.play(mObjectAnimator);
     }
 }

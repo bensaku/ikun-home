@@ -63,4 +63,14 @@ public class MainActivity extends AppCompatActivity {
 //设置 Footer 为 球脉冲 样式
         refreshLayout1.setRefreshFooter(new BallPulseFooter(this).setSpinnerStyle(SpinnerStyle.Scale));
     }
+
+    /**
+     * @author: wangke
+     * @date: 2023/10/24
+     * @description:study
+     */
+    private void initView(){
+        RecyclerView recyclerView = findViewById(R.id.demo_recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
 }

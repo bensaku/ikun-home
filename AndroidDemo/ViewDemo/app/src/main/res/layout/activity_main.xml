@@ -9,6 +9,7 @@
 
 
     <com.example.viewdemo.CustomView
+        android:id="@+id/move"
         android:background="@color/black"
         android:layout_width="30dp"
         android:layout_height="30dp"/>
